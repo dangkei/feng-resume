@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huang Feng - Resume Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a5f',
+                        accent: '#2563eb',
+                        lightgray: '#f3f4f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .section-title {
+                @apply text-lg font-bold text-primary border-b-2 border-accent pb-1 mb-3;
+            }
+            .item-title {
+                @apply font-semibold text-gray-800;
+            }
+            .meta-text {
+                @apply text-sm text-gray-500;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen py-8 px-4">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
+        <!-- Header -->
+        <div class="bg-primary text-white p-6 md:p-8">
+            <div class="flex flex-col md:flex-row gap-6">
+                <!-- Photo placeholder 2‑inch photo -->
+                <div class="shrink-0">
+                    <div class="w-[140px] h-[180px] bg-slate-300 rounded-lg flex items-center justify-center border-2 border-dashed border-slate-400">
+                        <div class="text-center text-slate-500">
+                            <i class="fa fa-user-circle-o text-4xl mb-2"></i>
+                            <div class="text-xs">2‑inch photo placeholder</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basic Info -->
+                <div class="flex-1">
+                    <h1 class="text-3xl font-bold mb-2">Huang Feng</h1>
+                    <p class="text-sky-100 text-lg mb-4">Senior Java Engineer & Technical Leader</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                        <div><i class="fa fa-map-marker mr-2"></i>Beijing, China</div>
+                        <div><i class="fa fa-mobile mr-2"></i>+86 13581600404</div>
+                        <div><i class="fa fa-envelope mr-2"></i>dangkei@163.com</div>
+                        <div><i class="fa fa-language mr-2"></i>English: Professional Working Proficiency</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-8">
+            <!-- Professional Summary -->
+            <section class="mb-6">
+                <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Senior Java Engineer & Technical Leader with 20+ years of experience in enterprise system development, including strong background in financial services and multinational environments. Expert in Java microservices architecture (Spring Boot / Spring Cloud), high‑availability systems, and enterprise application delivery. Proven experience in CRM‑related systems, workflow platforms, and data‑driven applications. Recently leading AI‑driven transformation initiatives, integrating large language models (e.g. DeepSeek) into business workflows to enhance automation, customer engagement, and operational efficiency. Strong communication skills with experience in global firms (PwC) and cross‑functional collaboration.
+                </p>
+            </section>
+
+            <!-- Core Skills -->
+            <section class="mb-6">
+                <h2 class="section-title">CORE SKILLS</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4">
+                    <div><span class="item-title">Backend Development:</span> Java, Spring Boot, Spring Cloud, Python(FastAPI)</div>
+                    <div><span class="item-title">Frontend:</span> React, JavaScript, HTML5</div>
+                    <div><span class="item-title">Architecture:</span> Microservices, Distributed Systems, RESTful APIs</div>
+                    <div><span class="item-title">Database:</span> MySQL, Oracle, Redis, NoSQL</div>
+                    <div><span class="item-title">AI & Automation:</span> LLM Integration(DeepSeek), AI‑driven workflows, Make, Notion</div>
+                    <div><span class="item-title">DevOps:</span> Linux, Docker, System Optimization</div>
+                    <div><span class="item-title">Domain Expertise:</span> CRM Systems, Workflow Automation, Enterprise Applications</div>
+                    <div><span class="item-title">Soft Skills:</span> Leadership, Stakeholder Communication, Agile Delivery</div>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="mb-6">
+                <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="item-title">Shenzhen Shengying Technology Co., Ltd. — IT Director / Technical Lead</div>
+                        <div class="meta-text">Jun 2024 – Present</div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+                        <li>Led the design and development of a multimedia data management system using Java (Spring Boot / Spring Cloud) with microservices architecture, ensuring high scalability and performance.</li>
+                        <li>Designed and implemented RESTful APIs and backend services to support data processing and business workflows.</li>
+                        <li>Collaborated with frontend team (React) to deliver SPA‑based enterprise applications.</li>
+                        <li>Optimized database performance (MySQL), improving system efficiency and response time.</li>
+                        <li><strong>AI & Automation Initiatives:</strong> Built and deployed internal AI platforms based on DeepSeek and other LLMs; applied AI for intelligent content generation, data‑driven insights, workflow automation.</li>
+                        <li>Developed an automated content pipeline using Make + Notion, enabling auto‑generation and publishing of company media content, significantly improving productivity.</li>
+                        <li>Managed development team, assigned tasks, ensured timely delivery; conducted internal AI training programs; aligned technical solutions with business stakeholders.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="item-title">Beijing Aerospace Sichuang Technology Co., Ltd. — Senior Java Developer</div>
+                        <div class="meta-text">Apr 2019 – Jun 2024</div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+                        <li>Designed and developed government‑level enterprise systems using Spring Boot & Spring Cloud.</li>
+                        <li>Led system architecture optimization, improving system performance, scalability, and maintainability.</li>
+                        <li>Delivered large‑scale distributed systems deployed on Alibaba Cloud.</li>
+                        <li>Managed system operations, upgrades, and performance tuning.</li>
+                        <li><strong>Key Projects:</strong> Government Collaboration Office System (High‑concurrency distributed platform), Ningxia Government OA System Phase II</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="item-title">PwC (PricewaterhouseCoopers) — Senior Solution Analyst</div>
+                        <div class="meta-text">Mar 2008 – Mar 2016</div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+                        <li>Developed and maintained internal enterprise systems: Client Management System (CRM‑like platform), Expense Management System, Contract Management System.</li>
+                        <li>Delivered cross‑platform applications (Web + Mobile) improving internal efficiency.</li>
+                        <li>Worked in a multinational environment, collaborating with global teams.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="item-title">Beijing Nanbei Hengda Technology Co., Ltd. — Software Project Manager</div>
+                        <div class="meta-text">Dec 2017 – Mar 2019</div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+                        <li>Managed multiple enterprise projects, ensuring delivery quality, timeline, and risk control.</li>
+                        <li>Led system architecture design and core module development.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex flex-wrap justify-between">
+                        <div class="item-title">Beijing Huidian Technology Co., Ltd. — Technical Manager</div>
+                        <div class="meta-text">Apr 2016 – Nov 2017</div>
+                    </div>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700">
+                        <li>Responsible for system design, development, and technical problem‑solving.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-6">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="space-y-2">
+                    <div>
+                        <div class="item-title">China University of Petroleum (Beijing)</div>
+                        <div class="text-gray-600">Bachelor of Business Administration</div>
+                    </div>
+                    <div>
+                        <div class="item-title">Tianjin Polytechnic University</div>
+                        <div class="text-gray-600">Diploma in Polymer Materials Engineering</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Highlights (For Banking) -->
+            <section>
+                <h2 class="section-title">KEY HIGHLIGHTS (For Banking)</h2>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Strong experience in high‑availability enterprise systems aligned with banking standards</li>
+                    <li>Proven track record in CRM‑like systems and customer data platforms</li>
+                    <li>Hands‑on experience in real‑time / batch processing and workflow systems</li>
+                    <li>Experience in multinational company (PwC) with strong communication skills</li>
+                    <li>Emerging expertise in AI‑powered business transformation</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

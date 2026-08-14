@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄峰 - 个人简历</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        minor: '#4a5568',
+                        borderLine: '#cbd5e0'
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .title-block {
+                @apply text-lg font-semibold text-primary pb-2 border-b border-borderLine mb-4;
+            }
+            .company-name {
+                @apply font-medium text-primary;
+            }
+            .time-text {
+                @apply text-sm text-gray-500;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700 print:bg-white">
+    <div class="max-w-4xl mx-auto my-8 bg-white shadow print:shadow-none">
+        <!-- 头部信息区域 -->
+        <div class="p-8 flex flex-col md:flex-row gap-8">
+            <!-- 2寸证件照占位 140×180 -->
+            <div class="flex-shrink-0">
+                <div class="w-[140px] h-[180px] border border-dashed border-gray-300 rounded flex flex-col items-center justify-center text-gray-400">
+                    <i class="fa fa-user-o text-3xl"></i>
+                    <span class="text-xs mt-2">2寸证件照位置</span>
+                </div>
+                <!-- 使用真实照片替换上面div，打开下面注释即可
+                <img src="photo.jpg" class="w-[140px] h-[180px] object-cover rounded" alt="个人照片">
+                -->
+            </div>
+            <!-- 基础信息 -->
+            <div class="flex-1">
+                <h1 class="text-[28px] font-bold text-primary">黄峰</h1>
+                <div class="text-minor mt-1 text-lg">高级Java工程师 · 技术负责人</div>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-y-2 text-sm">
+                    <div><i class="fa fa-map-marker w-5 text-gray-400"></i>北京市</div>
+                    <div><i class="fa fa-phone w-5 text-gray-400"></i>+86 13581600404</div>
+                    <div><i class="fa fa-envelope w-5 text-gray-400"></i>dangkei@163.com</div>
+                    <div><i class="fa fa-language w-5 text-gray-400"></i>英语：工作熟练</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-8 pb-8 space-y-7">
+            <!-- 个人概述 -->
+            <section>
+                <h2 class="title-block">个人概述</h2>
+                <p class="leading-relaxed text-gray-700">
+                    拥有20余年企业级系统开发经验，具备金融行业与跨国企业项目背景。精通Java微服务架构（Spring Boot / Spring Cloud）、高可用系统设计与企业级项目交付；具备CRM系统、工作流平台、数据驱动类项目实战经验。主导AI数字化转型，将DeepSeek等大模型集成至业务流程，提升业务自动化水平、客户运营与整体运营效率。曾任职普华永道，擅长跨部门、跨团队沟通协作。
+                </p>
+            </section>
+
+            <!-- 核心技能 -->
+            <section>
+                <h2 class="title-block">核心技能</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                    <div><span class="font-medium">后端开发：</span>Java、Spring Boot、Spring Cloud、Python(FastAPI)</div>
+                    <div><span class="font-medium">前端技术：</span>React、JavaScript、HTML5</div>
+                    <div><span class="font-medium">架构能力：</span>微服务、分布式系统、RESTful接口</div>
+                    <div><span class="font-medium">数据库：</span>MySQL、Oracle、Redis、NoSQL</div>
+                    <div><span class="font-medium">AI与自动化：</span>大模型集成(DeepSeek)、AI业务流程、Make、Notion</div>
+                    <div><span class="font-medium">运维部署：</span>Linux、Docker、系统调优</div>
+                    <div><span class="font-medium">业务领域：</span>CRM客户系统、工作流自动化、企业应用</div>
+                    <div><span class="font-medium">综合能力：</span>团队管理、多方沟通、敏捷项目交付</div>
+                </div>
+            </section>
+
+            <!-- 工作经历 -->
+            <section>
+                <h2 class="title-block">工作经历</h2>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between items-baseline">
+                        <span class="company-name">深圳盛映科技有限公司｜IT总监 / 技术负责人</span>
+                        <span class="time-text">2024.06‑至今</span>
+                    </div>
+                    <ul class="list‑disc pl‑5 mt‑2 space‑y‑1 text‑sm leading‑relaxed">
+                        <li>基于Spring Boot / Spring Cloud微服务架构，主导多媒体数据管理系统设计与开发，保障系统高可扩展性与性能指标。</li>
+                        <li>设计并实现RESTful后端服务接口，支撑业务数据处理与工作流业务。</li>
+                        <li>协同React前端团队，完成SPA企业业务应用落地。</li>
+                        <li>针对MySQL数据库开展性能优化，提升系统整体响应效率。</li>
+                        <li>AI平台建设：基于DeepSeek大模型搭建企业内部AI能力平台，落地智能内容生成、业务数据分析、流程自动化场景。</li>
+                        <li>基于Make+Notion搭建内容自动化流水线，实现企业媒体内容自动生成与发布，显著提升团队产出效率。</li>
+                        <li>负责研发团队管理、任务分配与项目交付；组织内部AI技术培训，对齐业务诉求输出技术解决方案。</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between items-baseline">
+                        <span class="company-name">北京航天思创科技有限公司｜高级Java开发工程师</span>
+                        <span class="time-text">2019.04‑2024.06</span>
+                    </div>
+                    <ul class="list‑disc pl‑5 mt‑2 space‑y‑1 text‑sm leading‑relaxed">
+                        <li>使用Spring Boot、Spring Cloud完成政务级企业业务系统的设计与开发。</li>
+                        <li>主导架构优化，提升系统性能、可扩展性与可维护性。</li>
+                        <li>在阿里云上交付大型分布式业务平台，负责系统运维、版本升级与性能调优。</li>
+                        <li>主要项目：政务协同办公高并发分布式平台、宁夏政务OA二期系统。</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between items-baseline">
+                        <span class="company-name">普华永道(PwC)｜高级解决方案分析师</span>
+                        <span class="time-text">2008.03‑2016.03</span>
+                    </div>
+                    <ul class="list‑disc pl‑5 mt‑2 space‑y‑1 text‑sm leading‑relaxed">
+                        <li>负责内部企业系统开发维护：客户管理(类CRM)、费用管理、合同管理系统。</li>
+                        <li>交付Web+移动端跨平台应用，提升企业内部运营效率。</li>
+                        <li>跨国团队协作，参与全球化项目实施。</li>
+                    </ul>
+                </div>
+
+                <div class="mb-5">
+                    <div class="flex flex-wrap justify-between items-baseline">
+                        <span class="company-name">北京南北恒达科技有限公司｜软件项目经理</span>
+                        <span class="time-text">2017.12‑2019.03</span>
+                    </div>
+                    <ul class="list‑disc pl‑5 mt‑2 space‑y‑1 text‑sm leading‑relaxed">
+                        <li>统筹多个企业项目，把控交付质量、项目周期与项目风险。</li>
+                        <li>参与系统架构设计与核心模块开发工作。</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="flex flex-wrap justify-between items-baseline">
+                        <span class="company-name">北京汇点科技有限公司｜技术经理</span>
+                        <span class="time-text">2016.04‑2017.11</span>
+                    </div>
+                    <ul class="list‑disc pl‑5 mt‑2 space‑y‑1 text‑sm leading‑relaxed">
+                        <li>负责系统方案设计、开发实施以及线上技术问题排查解决。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 教育背景 -->
+            <section>
+                <h2 class="title-block">教育背景</h2>
+                <div class="space‑y‑2 text‑sm">
+                    <div>
+                        <div class="font‑medium">中国石油大学（北京）</div>
+                        <div class="text‑gray‑600">工商管理本科</div>
+                    </div>
+                    <div>
+                        <div class="font‑medium">天津工业大学</div>
+                        <div class="text‑gray‑600">高分子材料工程专科</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 银行业务亮点 -->
+            <section>
+                <h2 class="title-block">银行业务适配亮点</h2>
+                <ul class="list‑disc pl‑5 space‑y‑1 text‑sm">
+                    <li>具备符合金融行业标准的高可用企业系统实战经验</li>
+                    <li>拥有CRM类系统、客户数据平台项目落地经验</li>
+                    <li>熟悉实时/批量数据处理与业务工作流平台建设</li>
+                    <li>跨国企业(PwC)工作背景，具备优秀多方沟通能力</li>
+                    <li>具备AI驱动业务数字化转型落地实践经验</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

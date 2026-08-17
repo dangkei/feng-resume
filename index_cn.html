@@ -37,16 +37,17 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700 print:bg-white">
-    <div class="max-w-4xl mx-auto my-8 bg-white shadow print:shadow-none">
+    <!-- 外层容器增加 relative -->
+    <div class="max-w-4xl mx-auto my-8 bg-white shadow print:shadow-none relative">
+        <!-- 🔤 语言切换 右上角 -->
+        <div class="absolute top-4 right-4 z-10">
+            <span class="text-gray-700 text-sm font-medium">中文</span>
+            <span class="text-gray-400 mx-1">|</span>
+            <a href="./index.html" class="text-blue-600 hover:text-blue-800 text-sm">English</a>
+        </div>
 
         <!-- 头部信息区域 -->
         <div class="p-8 flex flex-col md:flex-row gap-8">
-                    <!-- 🔤 中英文切换按钮 定位到卡片右上角 -->
-        <div class="absolute top-4 right-4 z-10">
-            <a href="./index.html" class="text-blue hover:text-sky-200 text-sm">English</a>
-            <span class="text-blue mx-1">|</span>
-            <span class="text-sky-200 text-sm font-medium">中文</span>
-        </div>
             <!-- 2寸证件照占位 140×180 -->
             <div class="flex-shrink-0">
                 <div class="w-[140px] h-[180px] border border-dashed border-gray-300 rounded flex flex-col items-center justify-center text-gray-400">
@@ -69,7 +70,6 @@
                 </div>
             </div>
         </div>
-
         <div class="px-8 pb-8 space-y-7">
             <!-- 个人概述 -->
             <section>
@@ -78,7 +78,6 @@
                     拥有20余年企业级系统开发经验，具备金融行业与跨国企业项目背景。精通Java微服务架构（Spring Boot / Spring Cloud）、高可用系统设计与企业级项目交付；具备CRM系统、工作流平台、数据驱动类项目实战经验。主导AI数字化转型，将DeepSeek等大模型集成至业务流程，提升业务自动化水平、客户运营与整体运营效率。曾任职普华永道，擅长跨部门、跨团队沟通协作。
                 </p>
             </section>
-
             <!-- 核心技能 -->
             <section>
                 <h2 class="title-block">核心技能</h2>
@@ -93,11 +92,9 @@
                     <div><span class="font-medium">综合能力：</span>团队管理、多方沟通、敏捷项目交付</div>
                 </div>
             </section>
-
             <!-- 工作经历 -->
             <section>
                 <h2 class="title-block">工作经历</h2>
-
                 <div class="mb-5">
                     <div class="flex flex-wrap justify-between items-baseline">
                         <span class="company-name">深圳盛映科技有限公司｜IT总监 / 技术负责人</span>
@@ -113,7 +110,6 @@
                         <li>负责研发团队管理、任务分配与项目交付；组织内部AI技术培训，对齐业务诉求输出技术解决方案。</li>
                     </ul>
                 </div>
-
                 <div class="mb-5">
                     <div class="flex flex-wrap justify-between items-baseline">
                         <span class="company-name">北京航天思创科技有限公司｜高级Java开发工程师</span>
@@ -126,7 +122,6 @@
                         <li>主要项目：政务协同办公高并发分布式平台、宁夏政务OA二期系统。</li>
                     </ul>
                 </div>
-
                 <div class="mb-5">
                     <div class="flex flex-wrap justify-between items-baseline">
                         <span class="company-name">普华永道(PwC)｜高级解决方案分析师</span>
@@ -138,7 +133,6 @@
                         <li>跨国团队协作，参与全球化项目实施。</li>
                     </ul>
                 </div>
-
                 <div class="mb-5">
                     <div class="flex flex-wrap justify-between items-baseline">
                         <span class="company-name">北京南北恒达科技有限公司｜软件项目经理</span>
@@ -149,7 +143,6 @@
                         <li>参与系统架构设计与核心模块开发工作。</li>
                     </ul>
                 </div>
-
                 <div>
                     <div class="flex flex-wrap justify-between items-baseline">
                         <span class="company-name">北京汇点科技有限公司｜技术经理</span>
@@ -160,7 +153,6 @@
                     </ul>
                 </div>
             </section>
-
             <!-- 教育背景 -->
             <section>
                 <h2 class="title-block">教育背景</h2>
@@ -175,7 +167,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- 银行业务亮点 -->
             <section>
                 <h2 class="title-block">银行业务适配亮点</h2>
